@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oxp2
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0093-tenant/ci1t-43256-0093-app/devfile-sample-oxp2@sha256:35e4f6c61394e3fea948a776b2ad399e39c1304a25763c9e15da6f91bf0af38c
+        name: my-nodejs
+        resources: {}
+status: {}
